@@ -1,0 +1,27 @@
+So here comes a test :
+
+1 - Please provide your approach to implement an offline feature for the messages app. (Assume you have an API that returns a messages list. We need you get the list and display to the UI, when you refresh the browser then we need to display loaded messages and new messages as well)
+approach :-
+   - we need to use a service worker, it is a Javascript file that intercepts and caches requests and run seperate from the main thred.
+   - we can converting our web app into PWA to full fill our requirement of offline content load.
+
+2 - Please provide sample code that we have these features (NOTE: you just need to add any complicated UI, that can be html file with some text and button)
+Home: there are 3 buttons that I can access the module below
+Mail (Implement mat dialog when user clicks on View, Create, Delete. Each dialog is a component)
+Contacts (Implement mat dialog when user clicks on View, Create, Delete. Each dialog is a component)
+Calendar (Implement mat dialog when user clicks on View, Create, Delete. Each dialog is a component)
+
+Ans :
+- created angular demo app in version 13.2.0.
+- added @angular/material": "^13.3.1
+- added lazy loading router feature.
+- git repo :- https://github.com/chavdahitesh/ng-offline-app.git
+
+3 - Please provide your knowledge about Rxjs, give some sample code how and why you use it.
+
+- Rxjs is a js library that uses observables to deals with asynchronous data calls, callbacks and event-based programs.
+- when our action triggering multiple events we use Rxjs
+
+exaple decription:
+- you can check home.component.ts file in demo app we call api to get list of posts
+- here you can check in code we use rxjs Subject and operators for overcome memory leakage issue.
